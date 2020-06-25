@@ -25,7 +25,7 @@ def upload():
             basepath, 'uploads', secure_filename(f.filename))
         f.save(file_path)
         print("File path: ", file_path)
-        return tensor1.emotion_function(file_path)
+        return tensor.emotion_function(file_path)
     return None
 
 
